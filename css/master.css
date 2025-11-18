@@ -5,14 +5,11 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
-  height: 100%;
-}
-
-body {
-  background: #f5f5f5;
-  display: flex;
-  flex-direction: column;
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .header {
@@ -75,7 +72,8 @@ body {
     flex-direction: column;
     padding: 15px;
     border-radius: 8px;
-    display: none; /* hidden by default */
+    display: none;
+    /* hidden by default */
   }
 
   /* show when checkbox checked */
@@ -96,7 +94,8 @@ body {
 }
 
 .cards {
-  width: 90%; /* to adapts to the screen size specailly small screens*/
+  width: 100%;
+  max-width: 1200px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -107,7 +106,16 @@ body {
   background: white;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* H V Blur Color */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /* H V Blur Color */
+}
+
+.card h3 {
+  margin-bottom: 20px;
+}
+
+.card p {
+  line-height: 1.5;
 }
 
 .card .img {
@@ -134,7 +142,7 @@ body {
 }
 
 .footer {
-  margin-top: auto;
+  margin-top: 40px;
   background: #222;
   color: white;
   text-align: center;
